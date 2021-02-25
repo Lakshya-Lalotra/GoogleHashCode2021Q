@@ -8,12 +8,14 @@
 
 using namespace std;
 
-int main ()
+  int main()
 {
-    freopen("inputs/input.txt", "r", stdin);
-    freopen("outputs/output.txt", "w", stdout);
-
-    cout << "Hello, world!" << endl;
+    vector<Edge> edges =
+            {
+                    // `(x, y, w)` —> edge from `x` to `y` having weight `w`
+                    { 0, 1, 6 }, { 1, 2, 7 }, { 2, 0, 5 }, { 2, 1, 4 },
+                    { 3, 2, 10 }, { 5, 4, 1 }, { 4, 5, 3 }
+            };
 
     return 0;
 }
